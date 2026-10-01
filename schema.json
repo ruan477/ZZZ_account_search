@@ -1,0 +1,15 @@
+{
+  "section_source": {
+    "type": "section", "name": "Enka 数据源", "collapsed": false,
+    "fields": {"default_uid": {"type": "string", "name": "默认绝区零 UID", "default": "20363573", "hint": "工具未传 UID 时使用；角色须放入游戏公开展示柜。"}}
+  },
+  "section_common": {
+    "type": "section", "name": "通用配置", "collapsed": true,
+    "fields": {
+      "enable_command": {"type":"switch","name":"启用命令触发","default":true},
+      "command_words": {"type":"list","name":"触发命令词","default":["/面板","/评分","/zzz面板"]},
+      "allowed_users": {"type":"list","name":"白名单用户","default":[],"hint":"留空表示所有人可查。"},
+      "enable_tool": {"type":"switch","name":"启用 LLM 工具","default":true}
+    }
+  }
+}
